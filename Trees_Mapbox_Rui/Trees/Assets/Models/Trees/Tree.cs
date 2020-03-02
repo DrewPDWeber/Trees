@@ -35,7 +35,9 @@ public class Tree : MonoBehaviour
         get { return hp; }
     }
 
-    private void OnMouseDown()
+	public int Id { get; internal set; }
+
+	private void OnMouseDown()
     {
 
     }
