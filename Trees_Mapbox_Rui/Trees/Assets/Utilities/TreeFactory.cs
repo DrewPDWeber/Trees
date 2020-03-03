@@ -11,6 +11,8 @@ public class TreeFactory : Singleton<TreeFactory>
     [SerializeField] private int startingTrees = 5;
     [SerializeField] private float minRange = 5.0f;
     [SerializeField] private float maxRange = 50.0f;
+    
+    JsonHelper jsonHelper = new JsonHelper();
 
     private void Awake()
     {
@@ -39,11 +41,15 @@ public class TreeFactory : Singleton<TreeFactory>
 
     private void InstantiateTree()
     {
+       
         int index = Random.Range(0, availableTrees.Length);
         float x = player.transform.position.x + GenerateRange();
         float z = player.transform.position.z + GenerateRange();
         float y = player.transform.position.y;
-        Instantiate(availableTrees[index], new Vector3(x, y, z), Quaternion.identity);
+
+        availableTrees[index].TreeInfo = (jsonHelper.CreateTree(index, "A lovely Tree", "Potato", new GeoTypeInfo(1, new GeoPosition(x, z))));
+
+        Instantiate(availableTrees[index], new Vector3((float)availableTrees[index].TreeInfo.GeoType.GeoLocation.Longitude, y, (float)availableTrees[index].TreeInfo.GeoType.GeoLocation.Latitude), Quaternion.identity);
 
     }
 
