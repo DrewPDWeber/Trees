@@ -27,16 +27,6 @@ public class TreeFactory : Singleton<TreeFactory>
         {
             InstantiateTree();
         }
-        StartCoroutine(GenerateTrees());
-    }
-
-    private IEnumerator GenerateTrees()
-    {
-        while (true)
-        {
-            InstantiateTree();
-            yield return new WaitForSeconds(waitTime);
-        }
     }
 
     private void InstantiateTree()
@@ -47,9 +37,12 @@ public class TreeFactory : Singleton<TreeFactory>
         float z = player.transform.position.z + GenerateRange();
         float y = player.transform.position.y;
 
-        availableTrees[index].TreeInfo = (jsonHelper.CreateTree(index, "A lovely Tree", "Potato", new GeoTypeInfo(1, new GeoPosition(x, z))));
+        availableTrees[index].Id = index;
+        availableTrees[index].Name = "A lovely Tree";
+        availableTrees[index].Species = "Potato";
+        availableTrees[index].GeoType = new GeoTypeInfo(1, new GeoPosition(x, z));
 
-        Instantiate(availableTrees[index], new Vector3((float)availableTrees[index].TreeInfo.GeoType.GeoLocation.Longitude, y, (float)availableTrees[index].TreeInfo.GeoType.GeoLocation.Latitude), Quaternion.identity);
+        Instantiate(availableTrees[index], new Vector3((float)availableTrees[index].GeoType.GeoLocation.Longitude, y, (float)availableTrees[index].GeoType.GeoLocation.Latitude), Quaternion.identity);
 
     }
 

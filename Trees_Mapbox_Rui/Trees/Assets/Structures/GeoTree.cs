@@ -1,6 +1,9 @@
-﻿using Newtonsoft.Json;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Newtonsoft.Json;
 
-public class GeoTree
+public class GeoTree : MonoBehaviour
 {
 	[JsonProperty("id")] 
 	public int Id { get; set; }
@@ -13,4 +16,12 @@ public class GeoTree
 
 	[JsonProperty("geotype")]
 	public GeoTypeInfo GeoType { get; set; }
+
+    private void OnMouseDown()
+    {
+        if (Name != null)
+            Debug.Log(Name);
+        else
+            Debug.Log("No tree");
+    }
 }
