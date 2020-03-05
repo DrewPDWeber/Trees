@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class JsonHelper : MonoBehaviour
 {
-	public static string Decode(Tree myTree) //simple encodes to Json
+	public static string Decode(GeoTree myTree) //simple encodes to Json
 	{
 		string json = JsonConvert.SerializeObject(myTree);
 		Debug.Log("GeoTree object decoded \n");

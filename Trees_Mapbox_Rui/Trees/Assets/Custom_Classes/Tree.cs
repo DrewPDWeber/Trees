@@ -19,6 +19,9 @@ public class Tree : MonoBehaviour
 
     private void OnMouseDown()
     {
-            Debug.Log(Name);
+        Debug.Log("ID:"+ Id);
+        Debug.Log("Name:"+ Name);
+        Debug.Log("Species:"+ Species);
+        Debug.Log("Geotype:"+ GeoType);
     }
 }
