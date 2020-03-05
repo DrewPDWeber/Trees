@@ -34,7 +34,7 @@ public class TreeFactory : Singleton<TreeFactory>
 
         
         string treeName = TreeTypes.TreeSpecies[Random.Range(0,TreeTypes.TreeSpecies.Count)];
-        string treeSpecies = "Potato";
+        string treeSpecies = TreeTypes.TreeNames[Random.Range(0, TreeTypes.TreeNames.Count)];
         GeoTypeInfo treeGeo = new GeoTypeInfo(1, new GeoPosition(x, z));
 
         closestTrees[index].Id = index;
