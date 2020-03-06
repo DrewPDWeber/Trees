@@ -1,1 +1,0 @@
-D:\Coding\JsonTest\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
