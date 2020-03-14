@@ -19,10 +19,11 @@ public class TreeData : MonoBehaviour
     public string Species;
 
     [JsonProperty("geotype")]
-    public GeoTypeInfo GeoType;
+    public GeoJsonCollection GeoType;
     // Start is called before the first frame update
     void Start()
     {
+
         treeData.text = Id.ToString() + " " + Name + " " +Species;
     }
 }

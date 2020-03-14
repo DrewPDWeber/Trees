@@ -1,9 +1,9 @@
 using Newtonsoft.Json;
 using UnityEngine;
 
-public class JsonHelper : MonoBehaviour
+public class JsonHelper
 {
-	public static string Decode(GeoTree myTree) //simple encodes to Json
+	public static string Decode(GeoJsonTree myTree) //simple encodes to Json
 	{
 		string json = JsonConvert.SerializeObject(myTree);
 		Debug.Log("GeoTree object decoded \n");
@@ -11,20 +11,10 @@ public class JsonHelper : MonoBehaviour
 		return json;
 	}
 
-	public Tree Encode(string geoString)
+	public static GeoJsonTree Encode(string geoString)
 	{
 		Debug.Log("GeoTree Json encoded to Object\n");
-		return JsonConvert.DeserializeObject<Tree>(geoString);
+		return JsonConvert.DeserializeObject<GeoJsonTree>(geoString);
 	}
-
-	public Tree CreateTree(int id, string name, string species, GeoTypeInfo geoInfo)
-	{
-		return  new Tree
-        {
-			Id = id,
-			Name = name,
-			Species = species,
-			GeoType = geoInfo
-		};
-	}
+ 
 }

@@ -5,19 +5,14 @@ using Newtonsoft.Json;
 
 public class Tree : MonoBehaviour
 {
-    [JsonProperty("id")]
+    //Used for local MonoBehavior
     public int Id;
-
-    [JsonProperty("name")]
     public string Name;
-
-    [JsonProperty("species")]
     public string Species;
+    public GeoJsonCollection Collection;
+    //end
 
-    [JsonProperty("geotype")]
-    public GeoTypeInfo GeoType;
-
-
+/*
     static bool _display = false, hiding;
     static string content;
 
@@ -50,13 +45,14 @@ public class Tree : MonoBehaviour
     {
         GUI.DragWindow(new Rect(0, 0, 10000, 20));
     }
+*/
     private void OnMouseDown()
     {
-        Debug.Log("ID:" + Id);
-        Debug.Log("Name:" + Name);
-        Debug.Log("Species:" + Species);
-        Debug.Log("Geotype:" + GeoType);
-        content = "ID:" + Id + "\n" + "Name:" + Name + "\n" + "Species:" + Species + "\n";
-        _display = true;
+        
+        //Create GeoJsonTree
+        GeoJsonTree jsonTree = new GeoJsonTree(Id,Name,Species,new GeoJsonCollection(1, new GeoJsonPosition(111, 222)));
+        Debug.Log(JsonConvert.SerializeObject(jsonTree));
+       // content = "ID:" + Id + "\n" + "Name:" + Name + "\n" + "Species:" + Species + "\n" + Collection.Type + "\n" + Collection.Location;
+       // _display = true;
     }
 }

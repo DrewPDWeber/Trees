@@ -1,8 +1,8 @@
 using Newtonsoft.Json;
 
-public class GeoPosition
+public class GeoJsonPosition
 {
-		public GeoPosition(double latitude, double longitude)
+		public GeoJsonPosition(double latitude, double longitude)
 		{
 			Latitude = latitude;
 			Longitude = longitude;

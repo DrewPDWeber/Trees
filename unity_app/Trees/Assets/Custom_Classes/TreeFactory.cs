@@ -47,15 +47,14 @@ public class TreeFactory : Singleton<TreeFactory>
         */
         string treeName = TreeTypes.TreeSpecies[Random.Range(0, TreeTypes.TreeSpecies.Count)];
         string treeSpecies = TreeTypes.TreeNames[Random.Range(0, TreeTypes.TreeNames.Count)];
-        GeoTypeInfo treeGeo = new GeoTypeInfo(1, new GeoPosition(x, z));
+        GeoJsonCollection treeGeo = new GeoJsonCollection(1, new GeoJsonPosition(x, z));
 
         closestTrees[index].Id = index;
         closestTrees[index].Name = treeName;
         closestTrees[index].Species = treeSpecies;
-        closestTrees[index].GeoType = treeGeo;
+        closestTrees[index].Collection = treeGeo;
 
-
-        Instantiate(closestTrees[index], new Vector3((float)closestTrees[index].GeoType.GeoLocation.Longitude, y, (float)closestTrees[index].GeoType.GeoLocation.Latitude), Quaternion.identity);
+        Instantiate(closestTrees[index], new Vector3((float)closestTrees[index].Collection.Location.Longitude, y, (float)closestTrees[index].Collection.Location.Latitude), Quaternion.identity);
 
     }
 
