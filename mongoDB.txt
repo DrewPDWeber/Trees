@@ -1,0 +1,2 @@
+https://docs.mongodb.com/manual/geospatial-queries/
+https://docs.mongodb.com/manual/reference/geojson/
