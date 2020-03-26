@@ -298,7 +298,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -229, y: -536}
+  m_AnchoredPosition: {x: -114.45, y: -747}
   m_SizeDelta: {x: 160, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1047851317
@@ -458,7 +458,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Back
+  m_text: Menu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -779,6 +779,7 @@ MonoBehaviour:
   Id: 0
   Name: 
   Species: 
+  TreeCountText: {fileID: 0}
 --- !u!1 &1734378214
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,7 +814,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -42, y: -793}
+  m_AnchoredPosition: {x: -42, y: -321}
   m_SizeDelta: {x: 304.9, y: 79.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1734378216
@@ -893,8 +894,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000076294, y: 83}
-  m_SizeDelta: {x: 884.6, y: 96.7}
+  m_AnchoredPosition: {x: 0, y: 114}
+  m_SizeDelta: {x: 487, y: 134}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1748971428
 MonoBehaviour:
@@ -911,6 +912,7 @@ MonoBehaviour:
   Id: 0
   Name: 
   Species: 
+  TreeCountText: {fileID: 0}
 --- !u!114 &1748971429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -958,7 +960,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 72
+  m_fontSize: 59.1
   m_fontSizeBase: 48
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1004,7 +1006,7 @@ MonoBehaviour:
     spaceCount: 1
     wordCount: 2
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
