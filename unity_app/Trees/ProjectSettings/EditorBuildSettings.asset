@@ -8,10 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/World/World.unity
     guid: a5c717b6225464943aefdff6e78401a6
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/World/MainMenu.unity
     guid: 387c583025c7cc64f92e441a5c479bd3
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/World/PersonalAccount.unity
     guid: 9d62bdb6f199f904b9418fceb0ac0563
+  - enabled: 1
+    path: Assets/Scenes/World/Tree.unity
+    guid: 12859b4566e144c4db91d51c484d7f5c
   m_configObjects: {}
