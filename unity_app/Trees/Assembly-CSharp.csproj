@@ -435,6 +435,7 @@
      <Compile Include="Assets\Scenes\World\toMainMenu1.cs" />
      <Compile Include="Assets\Scenes\World\toPersonalAccount.cs" />
      <Compile Include="Assets\Scenes\World\toTree.cs" />
+     <Compile Include="Assets\display_get_tree_data.cs" />
      <Compile Include="Assets\toMainMap.cs" />
      <Compile Include="Assets\toMainMenu.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
