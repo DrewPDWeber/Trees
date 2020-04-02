@@ -19,44 +19,42 @@ public class Tree : MonoBehaviour
     public static string stat_species;
     public static string treeDesc;
 
+    public Material clicked;            // new material for the tree
 
-    //void update()
-    // {
+    /*
+    static bool _display = false, hiding;
+    static string content;
 
-    //}
-    /* static bool _display = false, hiding;
-     static string content;
+    static Rect windowRect = new Rect(20, 20, 200, 200);
+    const float time = 5f; //Seconds to read the text
 
-         static Rect windowRect = new Rect(20, 20, 200, 200);
-         const float time = 5f; //Seconds to read the text
-
-         IEnumerator Hide()
-         {
-             if (!hiding)
-             {
+    IEnumerator Hide()
+    {
+        if (!hiding)
+        {
                  hiding = true;
                  yield return new WaitForSeconds(time);
                  hiding = false;
                  _display = false;
-             }
-             yield return null;
-         }
+        }
+        yield return null;
+    }
 
-         void OnGUI()
-         {
-             if (!_display)
-                 return;
+    void OnGUI()
+    {
+        if (!_display)
+            return;
 
-             windowRect = GUI.Window(0, windowRect, DoMyWindow, content);
+        windowRect = GUI.Window(0, windowRect, DoMyWindow, content);
 
-             StartCoroutine("Hide");
-         }
+        StartCoroutine("Hide");
+    }
 
-         void DoMyWindow(int windowID)
-         {
-             GUI.DragWindow(new Rect(0, 0, 10000, 20));
-         }
-     */
+    void DoMyWindow(int windowID)
+    {
+        GUI.DragWindow(new Rect(0, 0, 10000, 20));
+    }
+    */
     private void OnMouseDown()
     { 
         //Create GeoJsonTree
@@ -72,7 +70,17 @@ public class Tree : MonoBehaviour
 
         treeDesc = JsonConvert.SerializeObject(jsonTree);
         Debug.Log(treeDesc);
-        SceneManager.LoadScene("Tree");
+        //SceneManager.LoadScene("Tree");       // Changing scenes will initiate all tree again, so I comment this line for testing. Still have error poping out when the scene changed. -- by Rui
 
+        // The asset change is based on the click events just for now because we don't have database to offer the visit record. The asset of the tree will be reset when the scene change.  -- by Rui
+        // For the real use case, changeAsset should be called during the loading based on the visit record. So it won't be reset when the scene change. -- by Rui
+        changeAsset();
+    }
+
+    // changing the material of the tree
+    private void changeAsset()
+    {
+        // Debug.Log(gameObject.name);
+        gameObject.GetComponent<MeshRenderer>().material = clicked;
     }
 }

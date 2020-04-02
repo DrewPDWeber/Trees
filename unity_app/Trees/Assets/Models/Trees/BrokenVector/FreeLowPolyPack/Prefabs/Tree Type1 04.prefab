@@ -56,6 +56,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -92,11 +93,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 607d68ba84f54f84b85fb031a33a2104, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 0.1
-  catchRate: 0.1
-  attack: 0
-  defense: 0
-  hp: 10
+  Id: 0
+  Name: Arbutus
+  Species: Vaughn Boyd
+  clicked: {fileID: 2100000, guid: 65fb5c4ce7e4e4e1bbd063bbb561cde7, type: 2}
 --- !u!65 &3374858324689419631
 BoxCollider:
   m_ObjectHideFlags: 0
