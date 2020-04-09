@@ -436,6 +436,7 @@
      <Compile Include="Assets\Scripts\Singleton.cs" />
      <Compile Include="Assets\Scripts\Tree.cs" />
      <Compile Include="Assets\Scripts\TreeFactory.cs" />
+     <Compile Include="Assets\Scripts\TreeGenerator.cs" />
      <Compile Include="Assets\Scripts\TreeTypes.cs" />
      <Compile Include="Assets\display_get_tree_data.cs" />
      <None Include="Assets\Scripts\MongoDB\Plugins\MongoDB.Bson.xml" />

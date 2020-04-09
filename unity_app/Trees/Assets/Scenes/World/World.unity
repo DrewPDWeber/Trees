@@ -1057,10 +1057,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 099fcc8b7a81a944cb85445e34705266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treeData: {fileID: 1105879596}
-  Id: 0
-  Name: v
-  Species: a
 --- !u!1 &1597890613
 GameObject:
   m_ObjectHideFlags: 0
@@ -1217,6 +1213,30 @@ MonoBehaviour:
   - {fileID: -5956137512506630641, guid: 8ed1fa325ca228645ad26dd6eff14768, type: 3}
   - {fileID: -5956137512506630641, guid: 8ed1fa325ca228645ad26dd6eff14768, type: 3}
   - {fileID: -5956137512506630641, guid: 8ed1fa325ca228645ad26dd6eff14768, type: 3}
+  player: {fileID: 0}
+--- !u!114 &1812597458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812597452}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0fe451a0efdd2e47b8249a0a4440a3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  closeTrees:
+  - {fileID: 3147650912418540579, guid: 7c5aafe3fe2c6ef4a9150f7f44653760, type: 3}
+  - {fileID: 3147650912418540579, guid: 7c5aafe3fe2c6ef4a9150f7f44653760, type: 3}
+  - {fileID: 3147650912418540579, guid: 7c5aafe3fe2c6ef4a9150f7f44653760, type: 3}
+  - {fileID: 3147650912418540579, guid: 7c5aafe3fe2c6ef4a9150f7f44653760, type: 3}
+  - {fileID: 3147650912418540579, guid: 7c5aafe3fe2c6ef4a9150f7f44653760, type: 3}
+  - {fileID: 3147650912418540579, guid: 7c5aafe3fe2c6ef4a9150f7f44653760, type: 3}
+  - {fileID: 3147650912418540579, guid: 7c5aafe3fe2c6ef4a9150f7f44653760, type: 3}
+  - {fileID: 3147650912418540579, guid: 7c5aafe3fe2c6ef4a9150f7f44653760, type: 3}
+  - {fileID: 3147650912418540579, guid: 7c5aafe3fe2c6ef4a9150f7f44653760, type: 3}
+  - {fileID: 3147650912418540579, guid: 7c5aafe3fe2c6ef4a9150f7f44653760, type: 3}
   player: {fileID: 0}
 --- !u!1 &1863430159
 GameObject:
