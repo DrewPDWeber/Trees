@@ -5,11 +5,12 @@ using Newtonsoft.Json;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using MongoDB.Driver.GeoJsonObjectModel;
+using MongoDB.Bson;
 
 public class Tree : MonoBehaviour
 {
     //Used for local MonoBehavior
-    public int Id;
+    public ObjectId Id;
     public string Name;
     public string Species;
     public GeoJsonPoint<GeoJson2DGeographicCoordinates> Location;
@@ -59,7 +60,6 @@ public class Tree : MonoBehaviour
     private void OnMouseDown()
     { 
         //Create GeoJsonTree
-        GeoTree jsonTree = new GeoTree(Name,Species,new GeoJsonPoint<GeoJson2DGeographicCoordinates>(new GeoJson2DGeographicCoordinates(22,22)));
         //Debug.Log(JsonConvert.SerializeObject(jsonTree));
         //content = "ID:" + Id + "\n" + "Name:" + Name + "\n" + "Species:" + Species;// + "\n" + Collection.Type + "\n" + Collection.Location;
         //_display = true;
@@ -69,8 +69,6 @@ public class Tree : MonoBehaviour
         stat_name = Name;
         stat_species = Species;
 
-        treeDesc = JsonConvert.SerializeObject(jsonTree);
-        Debug.Log(treeDesc);
         //SceneManager.LoadScene("Tree");       // Changing scenes will initiate all tree again, so I comment this line for testing. Still have error poping out when the scene changed. -- by Rui
 
         // The asset change is based on the click events just for now because we don't have database to offer the visit record. The asset of the tree will be reset when the scene change.  -- by Rui
