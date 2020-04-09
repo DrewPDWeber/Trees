@@ -376,9 +376,6 @@
  <Reference Include="UnityEditor.iOS.Extensions">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="Newtonsoft.Json">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
- </Reference>
  <Reference Include="MapboxAccountsUnity">
  <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/Mapbox/MapboxAccounts/net35/MapboxAccountsUnity.dll</HintPath>
  </Reference>
@@ -400,35 +397,38 @@
  <Reference Include="Mapbox.Json">
  <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/ThirdParty/Mapbox.Json/Net35/Mapbox.Json.dll</HintPath>
  </Reference>
- <Reference Include="MongoDB.Bson">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/MongoDB/Plugins/MongoDB.Bson.dll</HintPath>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/Deprecation/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="Crc32C.NET">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/MongoDB/Plugins/Crc32C.NET.dll</HintPath>
- </Reference>
- <Reference Include="MongoDB.Driver">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/MongoDB/Plugins/MongoDB.Driver.dll</HintPath>
- </Reference>
- <Reference Include="MongoDB.Driver.Core">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/MongoDB/Plugins/MongoDB.Driver.Core.dll</HintPath>
- </Reference>
- <Reference Include="Snappy.NET">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/MongoDB/Plugins/Snappy.NET.dll</HintPath>
- </Reference>
- <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/MongoDB/Plugins/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
- </Reference>
- <Reference Include="System.Buffers">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/MongoDB/Plugins/System.Buffers.dll</HintPath>
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/Crc32C.NET.dll</HintPath>
  </Reference>
  <Reference Include="DnsClient">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/MongoDB/Plugins/DnsClient.dll</HintPath>
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/DnsClient.dll</HintPath>
  </Reference>
- <Reference Include="SharpCompress">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/MongoDB/Plugins/SharpCompress.dll</HintPath>
+ <Reference Include="MongoDB.Bson">
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/MongoDB.Bson.dll</HintPath>
+ </Reference>
+ <Reference Include="MongoDB.Driver.Core">
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/MongoDB.Driver.Core.dll</HintPath>
+ </Reference>
+ <Reference Include="MongoDB.Driver">
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/MongoDB.Driver.dll</HintPath>
  </Reference>
  <Reference Include="MongoDB.Libmongocrypt">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/MongoDB/Plugins/MongoDB.Libmongocrypt.dll</HintPath>
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/MongoDB.Libmongocrypt.dll</HintPath>
+ </Reference>
+ <Reference Include="SharpCompress">
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/SharpCompress.dll</HintPath>
+ </Reference>
+ <Reference Include="Snappy.NET">
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/Snappy.NET.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Buffers">
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/System.Buffers.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
  <HintPath>D:/Coding/git/Trees/unity_app/Trees/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>

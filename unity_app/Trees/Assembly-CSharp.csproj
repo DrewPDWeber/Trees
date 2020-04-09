@@ -55,14 +55,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Custom_Classes\GeoJson\GeoJsonCollection.cs" />
-     <Compile Include="Assets\Custom_Classes\GeoJson\GeoJsonPosition.cs" />
-     <Compile Include="Assets\Custom_Classes\GeoJson\GeoJsonTree.cs" />
-     <Compile Include="Assets\Custom_Classes\JsonHelper.cs" />
-     <Compile Include="Assets\Custom_Classes\Singleton.cs" />
-     <Compile Include="Assets\Custom_Classes\Tree.cs" />
-     <Compile Include="Assets\Custom_Classes\TreeFactory.cs" />
-     <Compile Include="Assets\Custom_Classes\TreeTypes.cs" />
      <Compile Include="Assets\GUI\Blue Cartoon UI\Demo_Assets\scripts\GUI_Demo.cs" />
      <Compile Include="Assets\Mapbox SDK\Mapbox\Core\Plugins\Android\UniAndroidPermission\UniAndroidPermission.cs" />
      <Compile Include="Assets\Mapbox SDK\Mapbox\Core\cheap-ruler-cs\CheapRuler.cs" />
@@ -429,23 +421,30 @@
      <Compile Include="Assets\Mapbox SDK\Mapbox\Unity\Utilities\VectorEntity.cs" />
      <Compile Include="Assets\Mapbox SDK\Mapbox\Unity\Utilities\VectorExtensions.cs" />
      <Compile Include="Assets\Models\Player\Scripts\Player.cs" />
-     <Compile Include="Assets\MongoDB\MongoTester.cs" />
-     <Compile Include="Assets\Scenes\World\TreeData.cs" />
      <Compile Include="Assets\Scenes\World\UIManager.cs" />
      <Compile Include="Assets\Scenes\World\toMainMap1.cs" />
      <Compile Include="Assets\Scenes\World\toMainMenu1.cs" />
      <Compile Include="Assets\Scenes\World\toPersonalAccount.cs" />
      <Compile Include="Assets\Scenes\World\toTree.cs" />
+     <Compile Include="Assets\Scripts\Deprecation\GeoJsonCollection.cs" />
+     <Compile Include="Assets\Scripts\Deprecation\GeoJsonPosition.cs" />
+     <Compile Include="Assets\Scripts\Deprecation\GeoJsonTree.cs" />
+     <Compile Include="Assets\Scripts\Deprecation\JsonHelper.cs" />
+     <Compile Include="Assets\Scripts\Deprecation\MongoTester.cs" />
+     <Compile Include="Assets\Scripts\GeoTree.cs" />
+     <Compile Include="Assets\Scripts\MongoDB\MongoDBManager.cs" />
+     <Compile Include="Assets\Scripts\Singleton.cs" />
+     <Compile Include="Assets\Scripts\Tree.cs" />
+     <Compile Include="Assets\Scripts\TreeFactory.cs" />
+     <Compile Include="Assets\Scripts\TreeTypes.cs" />
      <Compile Include="Assets\display_get_tree_data.cs" />
-     <Compile Include="Assets\toMainMap.cs" />
-     <Compile Include="Assets\toMainMenu.cs" />
-     <None Include="Assets\MongoDB\Plugins\MongoDB.Bson.xml" />
+     <None Include="Assets\Scripts\MongoDB\Plugins\MongoDB.Bson.xml" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Mapbox SDK\Mapbox\Examples\2_AstronautGame\AstronautGame\Astronaut\ProjectorLight.shader" />
      <None Include="Assets\Mapbox SDK\Mapbox\Unity\Location\ExampleGpsTraces\LocationProviderAndroidNative.txt" />
      <None Include="Assets\Mapbox SDK\Mapbox\Examples\2_AstronautGame\AstronautGame\Building\CharacterBuildingShader.shader" />
-     <None Include="Assets\MongoDB\Plugins\MongoDB.Driver.Core.xml" />
+     <None Include="Assets\Scripts\MongoDB\Plugins\MongoDB.Driver.Core.xml" />
      <None Include="Assets\Mapbox SDK\Mapbox\Shaders\MapboxStylesPerRenderer.shader" />
      <None Include="Assets\Mapbox SDK\Mapbox\Unity\Location\ExampleGpsTraces\LocationProviderUnity.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
@@ -453,7 +452,7 @@
      <None Include="Assets\Mapbox SDK\Mapbox\link.xml" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\Mapbox SDK\Mapbox\Shaders\MapboxStyles.shader" />
-     <None Include="Assets\JsonDotNet\link.xml" />
+     <None Include="Assets\Scripts\Deprecation\JsonDotNet\link.xml" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -478,7 +477,7 @@
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\Resources\Mapbox\MapboxConfiguration.txt" />
      <None Include="Assets\Mapbox SDK\Mapbox\Unity\Location\ExampleGpsTraces\LocationProviderAndroidNative-2.txt" />
-     <None Include="Assets\MongoDB\Plugins\MongoDB.Driver.xml" />
+     <None Include="Assets\Scripts\MongoDB\Plugins\MongoDB.Driver.xml" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/Coding/git/Trees/unity_app/Trees/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
@@ -684,9 +683,6 @@
  <Reference Include="UnityEngine.XRModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
  </Reference>
- <Reference Include="Newtonsoft.Json">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
- </Reference>
  <Reference Include="MapboxAccountsUnity">
  <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/Mapbox/MapboxAccounts/net35/MapboxAccountsUnity.dll</HintPath>
  </Reference>
@@ -708,35 +704,38 @@
  <Reference Include="Mapbox.Json">
  <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/ThirdParty/Mapbox.Json/Net35/Mapbox.Json.dll</HintPath>
  </Reference>
- <Reference Include="MongoDB.Bson">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/MongoDB/Plugins/MongoDB.Bson.dll</HintPath>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/Deprecation/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="Crc32C.NET">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/MongoDB/Plugins/Crc32C.NET.dll</HintPath>
- </Reference>
- <Reference Include="MongoDB.Driver">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/MongoDB/Plugins/MongoDB.Driver.dll</HintPath>
- </Reference>
- <Reference Include="MongoDB.Driver.Core">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/MongoDB/Plugins/MongoDB.Driver.Core.dll</HintPath>
- </Reference>
- <Reference Include="Snappy.NET">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/MongoDB/Plugins/Snappy.NET.dll</HintPath>
- </Reference>
- <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/MongoDB/Plugins/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
- </Reference>
- <Reference Include="System.Buffers">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/MongoDB/Plugins/System.Buffers.dll</HintPath>
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/Crc32C.NET.dll</HintPath>
  </Reference>
  <Reference Include="DnsClient">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/MongoDB/Plugins/DnsClient.dll</HintPath>
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/DnsClient.dll</HintPath>
  </Reference>
- <Reference Include="SharpCompress">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/MongoDB/Plugins/SharpCompress.dll</HintPath>
+ <Reference Include="MongoDB.Bson">
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/MongoDB.Bson.dll</HintPath>
+ </Reference>
+ <Reference Include="MongoDB.Driver.Core">
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/MongoDB.Driver.Core.dll</HintPath>
+ </Reference>
+ <Reference Include="MongoDB.Driver">
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/MongoDB.Driver.dll</HintPath>
  </Reference>
  <Reference Include="MongoDB.Libmongocrypt">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/MongoDB/Plugins/MongoDB.Libmongocrypt.dll</HintPath>
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/MongoDB.Libmongocrypt.dll</HintPath>
+ </Reference>
+ <Reference Include="SharpCompress">
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/SharpCompress.dll</HintPath>
+ </Reference>
+ <Reference Include="Snappy.NET">
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/Snappy.NET.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Buffers">
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/System.Buffers.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

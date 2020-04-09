@@ -1203,9 +1203,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1812597452}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2618733d0fd1d4046a81217b45ebe928, type: 3}
+  m_Script: {fileID: 11500000, guid: 40ee467140c0c0540bfd5c4e3504ba09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  closestTrees:
+  - {fileID: -5956137512506630641, guid: 8ed1fa325ca228645ad26dd6eff14768, type: 3}
+  - {fileID: -5956137512506630641, guid: 8ed1fa325ca228645ad26dd6eff14768, type: 3}
+  - {fileID: -5956137512506630641, guid: 8ed1fa325ca228645ad26dd6eff14768, type: 3}
+  - {fileID: -5956137512506630641, guid: 8ed1fa325ca228645ad26dd6eff14768, type: 3}
+  - {fileID: -5956137512506630641, guid: 8ed1fa325ca228645ad26dd6eff14768, type: 3}
+  - {fileID: -5956137512506630641, guid: 8ed1fa325ca228645ad26dd6eff14768, type: 3}
+  - {fileID: -5956137512506630641, guid: 8ed1fa325ca228645ad26dd6eff14768, type: 3}
+  - {fileID: -5956137512506630641, guid: 8ed1fa325ca228645ad26dd6eff14768, type: 3}
+  - {fileID: -5956137512506630641, guid: 8ed1fa325ca228645ad26dd6eff14768, type: 3}
+  - {fileID: -5956137512506630641, guid: 8ed1fa325ca228645ad26dd6eff14768, type: 3}
+  player: {fileID: 0}
 --- !u!1 &1863430159
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,11 +18,5 @@ public class display_get_tree_data : MonoBehaviour // remove monobehaviour to ma
         Id.text = Tree.stat_id;
         Name.text = Tree.stat_name;
         Species.text = Tree.stat_species;
-}
-
-    // Update is called once per frame
-    // void Update()
-    // {
-
-     //}
+    }
 }
