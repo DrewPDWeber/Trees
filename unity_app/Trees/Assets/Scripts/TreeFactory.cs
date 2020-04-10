@@ -1,14 +1,13 @@
-﻿///////////////////////////////////////////////////////////////////////////////
-//                   
-// Title:            TreeFactory
-//
-// Authors:          Drew Weber, Rui Wang
-// Description:      Used to populate the map with tree assets, connect to the 
-//                   database in order to retreave tree imformation, and creates
-//                   random tree imforamtion for testing purposes
-//                       
-//
-///////////////////////////////////////////////////////////////////////////////
+﻿/////////////////////////////////////////////////////////////////////////////////////
+// *                 
+// * Title:            TreeFactory
+// *
+// * Authors:          Drew Weber, Rui Wang
+// * Description:      Used to populate the map with tree assets, connect to the 
+// *                   database in order to retreave tree information, and creates
+// *                   random tree information for testing purposes
+// *                     
+/////////////////////////////////////////////////////////////////////////////////////
 using System.Collections;
 using System.Collections.Generic;
 using MongoDB.Driver.GeoJsonObjectModel;
@@ -60,7 +59,7 @@ public class TreeFactory : Singleton<TreeFactory>
         */
         
         
-        List<GeoTree> geoTrees = dbManager.GetEntrys(longitude,latitude); // gets the 10 closest trees
+        List<GeoTree> geoTrees = dbManager.GetEntries(longitude,latitude); // gets the 10 closest trees
         for (int i = 0; i < closestTrees.Length; i++)
         {
             InstantiateTree(i, geoTrees[i]);
