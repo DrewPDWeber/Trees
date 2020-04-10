@@ -37,6 +37,9 @@ public class MongoDBManager{
         mongoClient = new MongoClient(SERVER_BASE_STRING + user + ":" + password + SERVER_SETTINGS_STRING);
         mongoDatabase = mongoClient.GetDatabase(databaseName);
         mongoCollection = mongoDatabase.GetCollection<GeoTree>(collection);
+
+        mongoCollection.Indexes.CreateOne(Builders<GeoTree>.IndexKeys.Geo2DSphere("Location"));
+
     }
 
     public void AddEntry(GeoTree entry) => mongoCollection.InsertOne(entry);

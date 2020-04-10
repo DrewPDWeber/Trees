@@ -37,7 +37,7 @@ public class TreeFactory : Singleton<TreeFactory>
         Debug.Log(latitude);
         dbManager = new MongoDBManager(USERNAME,PASSWORD,DATABASE,COLLECTION);
 
-        // Adds trees
+        // Adds trees to database
         /*
         for(int i=0;i<10;i++)
         {
@@ -45,15 +45,16 @@ public class TreeFactory : Singleton<TreeFactory>
         }
         */
 
-        /* Gets closest tree
+         //Gets closest tree
+         /*
         GeoTree geoTree = dbManager.GetEntry(longitude,latitude); // gets the closest trees
         InstantiateTree(0, geoTree);
         Debug.Log(geoTree.Id);
-
         */
         
+        
         List<GeoTree> geoTrees = dbManager.GetEntrys(longitude,latitude); // gets the closest trees
-
+        Debug.Log("SIZE:" + closestTrees.Length);
         for (int i = 0; i < closestTrees.Length; i++)
         {
             InstantiateTree(i, geoTrees[i]);
@@ -65,17 +66,13 @@ public class TreeFactory : Singleton<TreeFactory>
 
     private void InstantiateTree(int index, GeoTree geoTree)
     {
- 
-        string treeName = TreeTypes.TreeSpecies[Random.Range(0, TreeTypes.TreeSpecies.Count)];
-        string treeSpecies = TreeTypes.TreeNames[Random.Range(0, TreeTypes.TreeNames.Count)];
-        GeoJsonPoint<GeoJson2DGeographicCoordinates> treeLocation = new GeoJsonPoint<GeoJson2DGeographicCoordinates>(new GeoJson2DGeographicCoordinates(geoTree.Location.Coordinates.Longitude,geoTree.Location.Coordinates.Latitude));  
+        Debug.Log("Instantiating Tree " + index);
+        closestTrees[index].Name= geoTree.name;
+        closestTrees[index].Species = geoTree.species;
+        closestTrees[index].Location = geoTree.Location;
 
-        closestTrees[index].Name= treeName;
-        closestTrees[index].Species = treeSpecies;
-        closestTrees[index].Location = treeLocation;
-
-        Debug.Log("Tree Name added:" + closestTrees[index].Name + " added to database");
-        Instantiate(closestTrees[index], new Vector3((float)treeLocation.Coordinates.Longitude, player.transform.position.y, (float)treeLocation.Coordinates.Latitude), Quaternion.identity);    
+        Instantiate(closestTrees[index], new Vector3((float)geoTree.Location.Coordinates.Longitude, player.transform.position.y, (float)geoTree.Location.Coordinates.Latitude), Quaternion.identity);    
+        Debug.Log("Instantiated Tree " + index);
     }
     //Generates a random tree and inserts into database
     private void AddRandomTree(double  longitude,double latitude)
@@ -89,7 +86,7 @@ public class TreeFactory : Singleton<TreeFactory>
         dbManager.AddEntry(geoTree);
     }
 
-    private float GenerateRange()
+    private double GenerateRange()
     {
         return Random.Range(MIN_RANGE, MAX_RANGE);
     }
