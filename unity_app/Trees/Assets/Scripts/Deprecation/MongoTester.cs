@@ -1,3 +1,11 @@
+///////////////////////////////////////////////////////////////////////////////
+//                   
+// Title:            MongoTester
+//
+// Author:           Drew Weber
+// Description :     deprecated, use MongoDBManager    
+//
+///////////////////////////////////////////////////////////////////////////////
 using MongoDB.Bson;
 using MongoDB.Driver;
 using MongoDB.Driver.GeoJsonObjectModel;
