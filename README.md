@@ -18,6 +18,13 @@ Assets:file_folder:
 # MongoDB
 Free database used from  [MongoDB Cloud Atlas](https://www.mongodb.com/cloud/atlas/ "MongoDB Cloud Atlas")
 
+## FAQ
+
+- **Testing**
+    - Something here
+
+---
+
 # Know issues
 - [ ] Mapbox map elements only precise up to 5 decimal places, making close trees stack together
 
