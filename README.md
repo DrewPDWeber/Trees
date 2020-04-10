@@ -26,7 +26,8 @@ Free database used from  [MongoDB Cloud Atlas](https://www.mongodb.com/cloud/atl
 ---
 ## Donations 
 
-- Help us make a greener Canada! Donate to contibute to plant trees in British Columbia 
+ We do not ask for personal donations but you can help us make a greener Canada! 
+Donate to contibute to plant trees in British Columbia 
 <p align="center">
   <a href="https://onetreeplanted.org/collections/canada/products/british-columbia-forests">
     <img src="https://raw.githubusercontent.com/DrewPDWeber/Trees/master/onetreeplanted.png?token=AMS3D7IIHMX5L7IT2PXEVI26SDBFM" alt="OneTreePlanted" width="80" height="80">
