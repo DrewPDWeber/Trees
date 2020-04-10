@@ -1,4 +1,13 @@
-﻿using System.Collections;
+﻿///////////////////////////////////////////////////////////////////////////////
+//                   
+// Title:            TreeTypes
+//
+// Authors:          Drew Weber
+// Description:      Contains tree names and species for use of testing
+//                       
+//
+///////////////////////////////////////////////////////////////////////////////
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 public class TreeTypes: MonoBehaviour {

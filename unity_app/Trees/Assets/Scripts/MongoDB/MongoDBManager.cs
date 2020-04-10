@@ -1,3 +1,13 @@
+///////////////////////////////////////////////////////////////////////////////
+//                   
+// Title:            MongoDBManager
+//
+// Author:           Drew Weber
+// Description :     Used to connect to MongoDB server, allows insertion of entries 
+//                   retreaval of entries near a point(location)    
+//
+///////////////////////////////////////////////////////////////////////////////
+
 using MongoDB.Bson;
 using MongoDB.Driver;
 using MongoDB.Driver.GeoJsonObjectModel;
@@ -25,7 +35,7 @@ public class MongoDBManager{
     private IMongoCollection < GeoTree > mongoCollection;
     #endregion
 
-
+    #region Functions
     public MongoDBManager(string user, string pass, string database,string collection) 
     {
         username = user;
@@ -38,6 +48,8 @@ public class MongoDBManager{
         mongoDatabase = mongoClient.GetDatabase(databaseName);
         mongoCollection = mongoDatabase.GetCollection<GeoTree>(collection);
 
+        //IMPORTANT
+        //Needed in order to be able to use near, tells the server that Location will be used as the index key
         mongoCollection.Indexes.CreateOne(Builders<GeoTree>.IndexKeys.Geo2DSphere("Location"));
 
     }
@@ -59,5 +71,5 @@ public class MongoDBManager{
         var query = mongoCollection.Find(locationQuery).Limit(1); //Limit the query to return only the top 10 results.
         return query.FirstOrDefault();
     }
-
+    #endregion
 }
