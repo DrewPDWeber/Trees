@@ -48,7 +48,7 @@ public class TreeFactory : Singleton<TreeFactory>
         /*
         for(int i=0;i<10;i++)
         {
-            AddRandomTree(longitude+Random.Range(-.00000001f, .00000001f),latitude+Random.Range(-.00000001f, .00000001f));
+            AddRandomTree(longitude+Random.Range(-.000001f, .000001f),latitude+Random.Range(-.000001f, .000001f));
         }
         */
 
