@@ -4,15 +4,15 @@
 
 
 # Structure
-[Assets]
- - [Scripts] // Holds majority of our code
+Assets:file_folder:
+ - Scripts:file_folder: : Holds majority of our code
     - GeoTree : Defines the stucture of the Tree
     - Singleton : Allows for only one instance of a class
     - Tree : holds the Tree imfomation that is contained on the map
     - TreeFactory : Populates the map with the trees
     - TreeTypes : Contains lists of tree types and names for testing use
-  - [MongoDB]
+  - MongoDB :file_folder:
     - MongoDBManager : Handles connection between client and MongoDB
-  - [Plugins] : Holds nessisary dll files for MongoDB
-  - [Depricated] : Code that is no longer useful
+  - Plugins:file_folder: : Holds nessisary dll files for MongoDB
+  - Depricated:file_folder: : Code that is no longer useful
 
