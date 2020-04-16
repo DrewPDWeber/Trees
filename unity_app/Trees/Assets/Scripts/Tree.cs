@@ -1,4 +1,14 @@
-﻿using System.Collections;
+﻿/////////////////////////////////////////////////////////////////////////////////////
+// *                 
+// * Title:            Tree
+// *
+// * Authors:          Drew Weber, Rui Wang
+// * Description:      Set up the tree object with basic attributes and the action 
+// *                   when the user click on it. 
+// *                     
+/////////////////////////////////////////////////////////////////////////////////////
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Newtonsoft.Json;

@@ -1,4 +1,14 @@
-﻿using System.Collections;
+﻿/////////////////////////////////////////////////////////////////////////////////////
+// *                 
+// * Title:            Sinigleton
+// *
+// * Authors:          Rui Wang
+// * Description:      Singleton pattern class. This class detects if T is a 
+// *                   MonoBehavior and will make a containing GameObject.
+// *                     
+/////////////////////////////////////////////////////////////////////////////////////
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
