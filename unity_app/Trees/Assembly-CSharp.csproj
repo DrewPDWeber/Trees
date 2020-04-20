@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Animation\LevelChanger.cs" />
      <Compile Include="Assets\GUI\Blue Cartoon UI\Demo_Assets\scripts\GUI_Demo.cs" />
      <Compile Include="Assets\Mapbox SDK\Mapbox\Core\Plugins\Android\UniAndroidPermission\UniAndroidPermission.cs" />
      <Compile Include="Assets\Mapbox SDK\Mapbox\Core\cheap-ruler-cs\CheapRuler.cs" />
