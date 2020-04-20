@@ -2,7 +2,7 @@
 // *                 
 // * Title:            Tree
 // *
-// * Authors:          Drew Weber, Rui Wang
+// * Authors:          Drew Weber, Rui Wang, Michael O'Neill
 // * Description:      Set up the tree object with basic attributes and the action 
 // *                   when the user click on it. 
 // *                     
@@ -26,7 +26,7 @@ public class Tree : MonoBehaviour
     public GeoJsonPoint<GeoJson2DGeographicCoordinates> Location;
     //end
 
-    public static string stat_id;
+    public static string stat_id; // values passed between scenes to Tree sceen display
     public static string stat_name;
     public static string stat_species;
     public static string treeDesc;
@@ -79,7 +79,7 @@ public class Tree : MonoBehaviour
         stat_name = Name;
         stat_species = Species;
 
-        //SceneManager.LoadScene("Tree");       // Changing scenes will initiate all tree again, so I comment this line for testing. Still have error poping out when the scene changed. -- by Rui
+        SceneManager.LoadScene("Tree");       // Changing scenes will initiate all tree again, so I comment this line for testing. Still have error poping out when the scene changed. -- by Rui
 
         // The asset change is based on the click events just for now because we don't have database to offer the visit record. The asset of the tree will be reset when the scene change.  -- by Rui
         // For the real use case, changeAsset should be called during the loading based on the visit record. So it won't be reset when the scene change. -- by Rui

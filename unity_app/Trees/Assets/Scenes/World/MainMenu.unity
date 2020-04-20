@@ -451,7 +451,7 @@ GameObject:
   - component: {fileID: 498948747}
   - component: {fileID: 498948750}
   m_Layer: 5
-  m_Name: TREE Button
+  m_Name: TREEButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -903,8 +903,10 @@ GameObject:
   - component: {fileID: 826426691}
   - component: {fileID: 826426690}
   - component: {fileID: 826426689}
+  - component: {fileID: 826426692}
+  - component: {fileID: 826426693}
   m_Layer: 5
-  m_Name: dailyChallenge Button
+  m_Name: dailyChallengeButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -972,7 +974,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 826426690}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 826426693}
+        m_MethodName: toDailyChall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &826426690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1009,6 +1022,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 826426687}
   m_CullTransparentMesh: 0
+--- !u!114 &826426692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826426687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eca77612f30758646ab748a11665e9be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &826426693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826426687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d922b0d035a56d64bbd8e41c2a82dd24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &908708102
 GameObject:
   m_ObjectHideFlags: 0
@@ -1115,7 +1152,7 @@ GameObject:
   - component: {fileID: 1053250300}
   - component: {fileID: 1053250299}
   m_Layer: 5
-  m_Name: Account Button
+  m_Name: AccountButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1673,8 +1710,9 @@ GameObject:
   - component: {fileID: 1835558577}
   - component: {fileID: 1835558576}
   - component: {fileID: 1835558579}
+  - component: {fileID: 1835558580}
   m_Layer: 5
-  m_Name: back Button
+  m_Name: MapButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1800,6 +1838,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b8c84c8b14d1a344b978197bdc2cd61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1835558580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835558574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c8c40a2b31686429e7fa1e2c041451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2123412949

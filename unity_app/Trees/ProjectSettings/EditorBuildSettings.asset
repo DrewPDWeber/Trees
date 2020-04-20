@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/World/Tree.unity
     guid: 12859b4566e144c4db91d51c484d7f5c
+  - enabled: 1
+    path: Assets/Scenes/World/DailyChallenge.unity
+    guid: 03e26765d0121804e9032fd74f3b4c37
   m_configObjects: {}
