@@ -26,7 +26,8 @@ public class Tree : MonoBehaviour
     public GeoJsonPoint<GeoJson2DGeographicCoordinates> Location;
     //end
 
-    public static string stat_id; // values passed between scenes to Tree sceen display
+    // values passed between scenes to Tree sceen display
+    public static string stat_id; 
     public static string stat_name;
     public static string stat_species;
     public static string treeDesc;

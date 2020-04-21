@@ -422,12 +422,6 @@
      <Compile Include="Assets\Mapbox SDK\Mapbox\Unity\Utilities\VectorEntity.cs" />
      <Compile Include="Assets\Mapbox SDK\Mapbox\Unity\Utilities\VectorExtensions.cs" />
      <Compile Include="Assets\Models\Player\Scripts\Player.cs" />
-     <Compile Include="Assets\Scenes\World\UIManager.cs" />
-     <Compile Include="Assets\Scenes\World\toDailyChallenge.cs" />
-     <Compile Include="Assets\Scenes\World\toMainMap1.cs" />
-     <Compile Include="Assets\Scenes\World\toMainMenu1.cs" />
-     <Compile Include="Assets\Scenes\World\toPersonalAccount.cs" />
-     <Compile Include="Assets\Scenes\World\toTree.cs" />
      <Compile Include="Assets\Scripts\Deprecation\GeoJsonCollection.cs" />
      <Compile Include="Assets\Scripts\Deprecation\GeoJsonPosition.cs" />
      <Compile Include="Assets\Scripts\Deprecation\GeoJsonTree.cs" />
@@ -439,6 +433,12 @@
      <Compile Include="Assets\Scripts\Tree.cs" />
      <Compile Include="Assets\Scripts\TreeFactory.cs" />
      <Compile Include="Assets\Scripts\TreeTypes.cs" />
+     <Compile Include="Assets\Scripts\UIManager.cs" />
+     <Compile Include="Assets\Scripts\toDailyChallenge.cs" />
+     <Compile Include="Assets\Scripts\toMainMap1.cs" />
+     <Compile Include="Assets\Scripts\toMainMenu1.cs" />
+     <Compile Include="Assets\Scripts\toPersonalAccount.cs" />
+     <Compile Include="Assets\Scripts\toTree.cs" />
      <Compile Include="Assets\display_get_tree_data.cs" />
      <None Include="Assets\Scripts\MongoDB\Plugins\MongoDB.Bson.xml" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
