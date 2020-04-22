@@ -2,7 +2,8 @@
 // *                 
 // * Title:            TreeFactory
 // *
-// * Authors:          Drew Weber, Rui Wang
+// * Authors:          Drew Weber for implimenting MongoDB commands and use of MongoDBManager
+// *                   Rui Wang for everything else
 // * Description:      Used to populate the map with tree assets, connect to the 
 // *                   database in order to retreave tree information, and creates
 // *                   random tree information for testing purposes
