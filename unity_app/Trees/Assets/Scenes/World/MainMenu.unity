@@ -522,6 +522,7 @@ GameObject:
   - component: {fileID: 498948749}
   - component: {fileID: 498948748}
   - component: {fileID: 498948747}
+  - component: {fileID: 498948751}
   - component: {fileID: 498948750}
   m_Layer: 5
   m_Name: TREEButton
@@ -593,7 +594,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 498948750}
+      - m_Target: {fileID: 498948751}
+        m_MethodName: FadeToScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 498948751}
         m_MethodName: ToTreeAccount
         m_Mode: 1
         m_Arguments:
@@ -640,7 +652,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 498948745}
   m_CullTransparentMesh: 0
---- !u!114 &498948750
+--- !u!95 &498948750
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498948745}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0038ff9c3f168334c9f2b7db292238f6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &498948751
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -649,9 +680,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 498948745}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 757681974dac8cf48a57646c8a1ad378, type: 3}
+  m_Script: {fileID: 11500000, guid: 991ec0f69c78f2943b67d93300097e65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 1913664471}
 --- !u!1 &510421071
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,7 +1009,6 @@ GameObject:
   - component: {fileID: 826426690}
   - component: {fileID: 826426689}
   - component: {fileID: 826426692}
-  - component: {fileID: 826426693}
   - component: {fileID: 826426694}
   m_Layer: 5
   m_Name: dailyChallengeButton
@@ -1060,7 +1091,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 826426693}
+      - m_Target: {fileID: 826426692}
         m_MethodName: toDailyChall
         m_Mode: 1
         m_Arguments:
@@ -1116,22 +1147,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 826426687}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eeb0988d0a5ec8f40b98a930a646355f, type: 3}
+  m_Script: {fileID: 11500000, guid: ca937f066b2683d4fbd5d7043d1fca20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 826426694}
---- !u!114 &826426693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 826426687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d922b0d035a56d64bbd8e41c2a82dd24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  animator: {fileID: 1913664471}
 --- !u!95 &826426694
 Animator:
   serializedVersion: 3
@@ -1256,6 +1275,7 @@ GameObject:
   - component: {fileID: 1053250301}
   - component: {fileID: 1053250300}
   - component: {fileID: 1053250299}
+  - component: {fileID: 1053250303}
   m_Layer: 5
   m_Name: AccountButton
   m_TagString: Untagged
@@ -1292,9 +1312,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1053250297}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5526343fa49d834ba5fac9ac316fc5c, type: 3}
+  m_Script: {fileID: 11500000, guid: 9924792fd592d8642b74ad5c40003c3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 1913664471}
 --- !u!114 &1053250300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1338,6 +1359,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1053250299}
+        m_MethodName: FadeToScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1053250299}
         m_MethodName: ToPersonalAccount
         m_Mode: 1
@@ -1385,6 +1417,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053250297}
   m_CullTransparentMesh: 0
+--- !u!95 &1053250303
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053250297}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0038ff9c3f168334c9f2b7db292238f6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1242605925
 GameObject:
   m_ObjectHideFlags: 0
@@ -1496,9 +1547,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1242605925}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8c8c40a2b31686429e7fa1e2c041451, type: 3}
+  m_Script: {fileID: 11500000, guid: 6fa5fa53afed65246b18d26a97d54180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 1913664471}
 --- !u!114 &1242605931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1511,7 +1563,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb0988d0a5ec8f40b98a930a646355f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 1242605932}
+  animator: {fileID: 1913664471}
 --- !u!95 &1242605932
 Animator:
   serializedVersion: 3
@@ -1522,7 +1574,7 @@ Animator:
   m_GameObject: {fileID: 1242605925}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5088d88eff4af7d41b2b965a499ad0a7, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0038ff9c3f168334c9f2b7db292238f6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1920,7 +1972,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1242605930}
+      - m_Target: {fileID: 1835558579}
+        m_MethodName: FadeToScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1835558579}
         m_MethodName: toMap
         m_Mode: 1
         m_Arguments:
@@ -1976,21 +2039,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 1835558574}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b8c84c8b14d1a344b978197bdc2cd61, type: 3}
+  m_Script: {fileID: 11500000, guid: 6fa5fa53afed65246b18d26a97d54180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1835558580
-MonoBehaviour:
+  animator: {fileID: 1913664471}
+--- !u!95 &1835558580
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1835558574}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8c8c40a2b31686429e7fa1e2c041451, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0038ff9c3f168334c9f2b7db292238f6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1862484427
 GameObject:
   m_ObjectHideFlags: 0

@@ -152,37 +152,37 @@
      <Compile Include="Assets\Mapbox SDK\ThirdPartyAssets\WoLfulus\LineEnding\Editor\LogEntries.cs" />
      <Compile Include="Assets\Mapbox SDK\ThirdPartyAssets\WoLfulus\LineEnding\Editor\LogEntry.cs" />
  <Reference Include="UnityEditor.TestRunner">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+ <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.TestRunner">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+ <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -377,61 +377,61 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="MapboxAccountsUnity">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/Mapbox/MapboxAccounts/net35/MapboxAccountsUnity.dll</HintPath>
+ <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/Mapbox/MapboxAccounts/net35/MapboxAccountsUnity.dll</HintPath>
  </Reference>
  <Reference Include="Mapbox.VectorTile.ExtensionMethods">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/Mapbox/vector-tile-cs/net46/Mapbox.VectorTile.ExtensionMethods.dll</HintPath>
+ <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/Mapbox/vector-tile-cs/net46/Mapbox.VectorTile.ExtensionMethods.dll</HintPath>
  </Reference>
  <Reference Include="Mapbox.VectorTile.Geometry">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/Mapbox/vector-tile-cs/net46/Mapbox.VectorTile.Geometry.dll</HintPath>
+ <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/Mapbox/vector-tile-cs/net46/Mapbox.VectorTile.Geometry.dll</HintPath>
  </Reference>
  <Reference Include="Mapbox.VectorTile.PbfReader">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/Mapbox/vector-tile-cs/net46/Mapbox.VectorTile.PbfReader.dll</HintPath>
+ <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/Mapbox/vector-tile-cs/net46/Mapbox.VectorTile.PbfReader.dll</HintPath>
  </Reference>
  <Reference Include="Mapbox.VectorTile.VectorTileReader">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/Mapbox/vector-tile-cs/net46/Mapbox.VectorTile.VectorTileReader.dll</HintPath>
+ <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/Mapbox/vector-tile-cs/net46/Mapbox.VectorTile.VectorTileReader.dll</HintPath>
  </Reference>
  <Reference Include="Mapbox.IO.Compression">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/ThirdParty/Mapbox.IO.Compression/net35/Mapbox.IO.Compression.dll</HintPath>
+ <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/ThirdParty/Mapbox.IO.Compression/net35/Mapbox.IO.Compression.dll</HintPath>
  </Reference>
  <Reference Include="Mapbox.Json">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/ThirdParty/Mapbox.Json/Net35/Mapbox.Json.dll</HintPath>
+ <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/ThirdParty/Mapbox.Json/Net35/Mapbox.Json.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/Deprecation/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Scripts/Deprecation/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="Crc32C.NET">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/Crc32C.NET.dll</HintPath>
+ <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/Crc32C.NET.dll</HintPath>
  </Reference>
  <Reference Include="DnsClient">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/DnsClient.dll</HintPath>
+ <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/DnsClient.dll</HintPath>
  </Reference>
  <Reference Include="MongoDB.Bson">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/MongoDB.Bson.dll</HintPath>
+ <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/MongoDB.Bson.dll</HintPath>
  </Reference>
  <Reference Include="MongoDB.Driver.Core">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/MongoDB.Driver.Core.dll</HintPath>
+ <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/MongoDB.Driver.Core.dll</HintPath>
  </Reference>
  <Reference Include="MongoDB.Driver">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/MongoDB.Driver.dll</HintPath>
+ <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/MongoDB.Driver.dll</HintPath>
  </Reference>
  <Reference Include="MongoDB.Libmongocrypt">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/MongoDB.Libmongocrypt.dll</HintPath>
+ <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/MongoDB.Libmongocrypt.dll</HintPath>
  </Reference>
  <Reference Include="SharpCompress">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/SharpCompress.dll</HintPath>
+ <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/SharpCompress.dll</HintPath>
  </Reference>
  <Reference Include="Snappy.NET">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/Snappy.NET.dll</HintPath>
+ <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/Snappy.NET.dll</HintPath>
  </Reference>
  <Reference Include="System.Buffers">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/System.Buffers.dll</HintPath>
+ <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/System.Buffers.dll</HintPath>
  </Reference>
  <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+ <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>D:/Coding/git/Trees/unity_app/Trees/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

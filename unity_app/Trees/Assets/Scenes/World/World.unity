@@ -1476,6 +1476,7 @@ GameObject:
   - component: {fileID: 1863430161}
   - component: {fileID: 1863430160}
   - component: {fileID: 1863430164}
+  - component: {fileID: 1863430166}
   - component: {fileID: 1863430165}
   m_Layer: 5
   m_Name: GUI
@@ -1578,8 +1579,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41a68bd192244754f8d5e40c61663b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menu: {fileID: 1349980481}
---- !u!114 &1863430165
+  menu: {fileID: 0}
+--- !u!95 &1863430165
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863430159}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0038ff9c3f168334c9f2b7db292238f6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1863430166
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1588,9 +1608,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1863430159}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f85982a2842753444ae4bcbe55d25b5b, type: 3}
+  m_Script: {fileID: 11500000, guid: c4688bf5c1ca9d94dbd21719e37b8912, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
 --- !u!1001 &2065229253
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2074,6 +2095,8 @@ GameObject:
   - component: {fileID: 2139311812}
   - component: {fileID: 2139311811}
   - component: {fileID: 2139311810}
+  - component: {fileID: 2139311814}
+  - component: {fileID: 2139311813}
   m_Layer: 5
   m_Name: Menu Button
   m_TagString: Untagged
@@ -2144,7 +2167,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1863430165}
+      - m_Target: {fileID: 2139311813}
+        m_MethodName: FadeToScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2139311813}
         m_MethodName: toMenu
         m_Mode: 1
         m_Arguments:
@@ -2191,6 +2225,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2139311808}
   m_CullTransparentMesh: 0
+--- !u!114 &2139311813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139311808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4688bf5c1ca9d94dbd21719e37b8912, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 551015885}
+--- !u!95 &2139311814
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139311808}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0038ff9c3f168334c9f2b7db292238f6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &2141762559 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4886150424162858, guid: 35ce2bb4caba9434db5e656796b632b1,

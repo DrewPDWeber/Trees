@@ -338,6 +338,7 @@ GameObject:
   - component: {fileID: 1047851320}
   - component: {fileID: 1047851319}
   - component: {fileID: 1047851318}
+  - component: {fileID: 1047851321}
   - component: {fileID: 1047851317}
   m_Layer: 5
   m_Name: back Button
@@ -375,9 +376,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1047851315}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f85982a2842753444ae4bcbe55d25b5b, type: 3}
+  m_Script: {fileID: 11500000, guid: c4688bf5c1ca9d94dbd21719e37b8912, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 123074058}
 --- !u!114 &1047851318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -421,7 +423,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1675939976}
+      - m_Target: {fileID: 1047851317}
+        m_MethodName: FadeToScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1047851317}
         m_MethodName: toMenu
         m_Mode: 1
         m_Arguments:
@@ -468,6 +481,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1047851315}
   m_CullTransparentMesh: 0
+--- !u!95 &1047851321
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047851315}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0038ff9c3f168334c9f2b7db292238f6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1120055790
 GameObject:
   m_ObjectHideFlags: 0
@@ -518,7 +550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
