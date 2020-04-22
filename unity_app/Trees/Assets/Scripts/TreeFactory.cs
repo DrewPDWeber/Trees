@@ -37,19 +37,17 @@ public class TreeFactory : Singleton<TreeFactory>
     // Start is called before the first frame update
     void Start()
     {   
-        double longitude = 60.1918800004297;
-        double latitude = 24.9685821991864;
+        double longitude = 60.19188;
+        double latitude = 24.96858;
 
         //Connect to database and collection
         dbManager = new MongoDBManager(USERNAME,PASSWORD,DATABASE,COLLECTION);
 
         // Adds trees to database
-        /*
         for(int i=0;i<10;i++)
         {
-            AddRandomTree(longitude+Random.Range(-.000001f, .000001f),latitude+Random.Range(-.000001f, .000001f));
+            AddRandomTree(longitude+Random.Range(-.0001f, .001f),latitude+Random.Range(-.0001f, .001f));
         }
-        */
 
          //Gets closest tree
          /*
