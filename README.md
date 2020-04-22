@@ -10,6 +10,8 @@ Animator:file_folder:
  - Fade_outDC : Animation for fade out to DailyChallenge scene
  - Fade_outMap : Animation for fade out to world scene
  - Fade_outTree : Animation for fade out to Tree scene
+ - LevelChanger (script) : provides scene change methods 
+ - LevelChanger (object)
 Assets:file_folder:
  - Scripts:file_folder: : Holds majority of our code
     - GeoTree : Defines the stucture of the Tree
