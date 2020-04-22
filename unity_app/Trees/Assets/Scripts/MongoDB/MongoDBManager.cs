@@ -46,6 +46,10 @@ public class MongoDBManager{
         mongoClient = new MongoClient(SERVER_BASE_STRING + user + ":" + password + SERVER_SETTINGS_STRING);
         mongoDatabase = mongoClient.GetDatabase(databaseName);
         mongoCollection = mongoDatabase.GetCollection<GeoTree>(collection);
+        
+        //IMPORTANT
+        //Needed in order to be able to use near, tells the server that Location will be used as the index key
+         mongoCollection.Indexes.CreateOne(Builders<GeoTree>.IndexKeys.Geo2DSphere("Location"));
     }
 
     public void AddEntry(GeoTree entry) => mongoCollection.InsertOne(entry);
