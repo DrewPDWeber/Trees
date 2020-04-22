@@ -9,6 +9,7 @@
 // *                     
 /////////////////////////////////////////////////////////////////////////////////////
 using System.Collections;
+using System;
 using System.Collections.Generic;
 using MongoDB.Driver.GeoJsonObjectModel;
 using UnityEngine;
@@ -44,10 +45,16 @@ public class TreeFactory : Singleton<TreeFactory>
         dbManager = new MongoDBManager(USERNAME,PASSWORD,DATABASE,COLLECTION);
 
         // Adds trees to database
+        /*
         for(int i=0;i<10;i++)
         {
-            AddRandomTree(longitude+Random.Range(-.0001f, .001f),latitude+Random.Range(-.0001f, .001f));
+            //Round to 5 decimal places due to limitation with mapbox
+            var newlongitude = Math.Round(longitude +  UnityEngine.Random.Range(-.001f, .001f),5);
+            var newlatitude =  Math.Round(latitude +  UnityEngine.Random.Range(-.001f, .001f),5);
+
+            AddRandomTree(newlongitude,newlatitude);
         }
+        */
 
          //Gets closest tree
          /*
@@ -80,8 +87,8 @@ public class TreeFactory : Singleton<TreeFactory>
     //Generates a random tree and inserts into database
     private void AddRandomTree(double  longitude,double latitude)
     {
-        string treeName = TreeTypes.TreeSpecies[Random.Range(0, TreeTypes.TreeSpecies.Count)];
-        string treeSpecies = TreeTypes.TreeNames[Random.Range(0, TreeTypes.TreeNames.Count)];
+        string treeName = TreeTypes.TreeSpecies[UnityEngine.Random.Range(0, TreeTypes.TreeSpecies.Count)];
+        string treeSpecies = TreeTypes.TreeNames[UnityEngine.Random.Range(0, TreeTypes.TreeNames.Count)];
         GeoJsonPoint<GeoJson2DGeographicCoordinates> treeLocation = new GeoJsonPoint<GeoJson2DGeographicCoordinates>(new GeoJson2DGeographicCoordinates(longitude,latitude));  
 
          //adds tree to database
