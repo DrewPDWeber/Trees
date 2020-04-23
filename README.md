@@ -38,15 +38,13 @@ Assets:file_folder:
   - Plugins:file_folder: : Holds nessisary dll files for MongoDB
   - Depricated:file_folder: : Code that is no longer useful
 
-# MongoDB
-Free database used from  [MongoDB Cloud Atlas](https://www.mongodb.com/cloud/atlas/ "MongoDB Cloud Atlas")
 
-## FAQ
-
-- **Testing**
-    - Something here
-
----
+## Credits 
+- [Mapbox](https://www.mongodb.com/cloud/atlas/ "Mapbox") for location data and map SDK
+- [DevilsGarage](https://www.devilsgarage.com "DevilsGarage") for Low-Poly-Pixel-Styled-RPG Game Asset Pack which was used for its trees and player assets.
+- [Blue Cartoon GUI Skin](https://assetstore.unity.com/packages/2d/gui/blue-cartoon-gui-skin-19535m "Blue Cartoon GUI Skin") For some GUI elements such as buttons.
+- [MongoDB Cloud Atlas](https://www.mongodb.com/cloud/atlas/ "MongoDB Cloud Atlas") for there free database hosting aswell as there C# wrapper files.
+- [One Tree Planted](https://onetreeplanted.org/ "MongoDB Cloud Atlas") for there logo for use for donations.
 ## Donations 
 
  We do not ask for personal donations but you can help us make a greener Canada! 
