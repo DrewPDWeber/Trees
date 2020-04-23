@@ -56,6 +56,15 @@ Assets:file_folder:
 - [Blue Cartoon GUI Skin](https://assetstore.unity.com/packages/2d/gui/blue-cartoon-gui-skin-19535m "Blue Cartoon GUI Skin") For some GUI elements such as buttons.
 - [MongoDB Cloud Atlas](https://www.mongodb.com/cloud/atlas/ "MongoDB Cloud Atlas") for there free database hosting aswell as there C# wrapper files.
 - [One Tree Planted](https://onetreeplanted.org/ "MongoDB Cloud Atlas") for there logo for use for donations.
+
+## Original Authors
+ ## Project coordinator 
+ - Aras Balali Moghaddam
+ ## Development Team
+- Michael O’Neill
+- Drew Weber
+- Rui Wang
+
 ## Donations 
 
  We do not ask for personal donations but you can help us make a greener Canada! 
