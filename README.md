@@ -14,6 +14,17 @@ Animator:file_folder:
  - LevelChanger (object)
  
 Assets:file_folder:
+
+- Animator:file_folder:
+ - Fade_in_Animation
+ - Fade_out : Animation for fade out to menu scene
+ - Fade_outAcc : Animation for fade out to personal account scene
+ - Fade_outDC : Animation for fade out to DailyChallenge scene
+ - Fade_outMap : Animation for fade out to world scene
+ - Fade_outTree : Animation for fade out to Tree scene
+ - LevelChanger (script) : provides scene change methods 
+ - LevelChanger (object)
+ 
  - Scripts:file_folder: : Holds majority of our code
     - GeoTree : Defines the stucture of the Tree
     - Singleton : Allows for only one instance of a class
