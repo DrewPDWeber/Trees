@@ -2,8 +2,6 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
-    <CscToolPath>C:\Program Files\Unity\Hub\Editor\2019.3.7f1\Editor\Data\Tools\RoslynScripts</CscToolPath>
-    <CscToolExe>unity_csc.bat</CscToolExe>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D10AF1EF-DEE6-BA38-6BA3-BCB0D000DA54}</ProjectGuid>
+    <ProjectGuid>{eff10ad1-e6de-38ba-6ba3-bcb0d000da54}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -47,16 +45,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="UnityEngine">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.3.7f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.3.7f1\Editor\Data\Managed/UnityEditor.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
      <Compile Include="Assets\Animation\LevelChanger.cs" />
      <Compile Include="Assets\GUI\Blue Cartoon UI\Demo_Assets\scripts\GUI_Demo.cs" />
+     <Compile Include="Assets\GUI\Player\Scripts\Player.cs" />
      <Compile Include="Assets\Mapbox SDK\Mapbox\Core\Plugins\Android\UniAndroidPermission\UniAndroidPermission.cs" />
      <Compile Include="Assets\Mapbox SDK\Mapbox\Core\cheap-ruler-cs\CheapRuler.cs" />
      <Compile Include="Assets\Mapbox SDK\Mapbox\Core\mapbox-sdk-cs\Directions\DirectionResource.cs" />
@@ -138,51 +129,30 @@
      <Compile Include="Assets\Mapbox SDK\Mapbox\Core\mapbox-sdk-cs\Utils\Vector2d\Vector2d.cs" />
      <Compile Include="Assets\Mapbox SDK\Mapbox\Core\probe-extractor-cs\Probe.cs" />
      <Compile Include="Assets\Mapbox SDK\Mapbox\Core\probe-extractor-cs\ProbeExtractor.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\1_DataExplorer\HighlightBuildings.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\1_DataExplorer\Scripts\TextMeshOutline.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\2_AstronautGame\AstronautGame\Astronaut\AstronautDirections.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\2_AstronautGame\AstronautGame\Astronaut\AstronautMouseController.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\2_AstronautGame\AstronautGame\Astronaut\CharacterMovement.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\3_POIPlacement\POIPlacementScriptExample.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\4_ReplaceFeatures\Scripts\BlinkLight.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\5_Playground\Scripts\DirectionsExample.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\5_Playground\Scripts\ForwardGeocoderExample.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\5_Playground\Scripts\LogLocationProviderData.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\5_Playground\Scripts\RasterTileExample.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\5_Playground\Scripts\ReverseGeocoderExample.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\5_Playground\Scripts\VectorTileExample.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\6_ZoomableMap\Scripts\SetCameraHeight.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\6_ZoomableMap\Scripts\SpawnOnMap.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\7_Globe\Scripts\DragRotate.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\7_Globe\Scripts\SpawnOnGlobeExample.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\8_VoxelMap\Scripts\TextureScaler.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\8_VoxelMap\Scripts\VoxelData.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\8_VoxelMap\Scripts\VoxelFetcher.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\8_VoxelMap\Scripts\VoxelTile.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\Scripts\CameraBillboard.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\Scripts\CameraMovement.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\Scripts\ChangeShadowDistance.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\Scripts\DragableDirectionWaypoint.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\Scripts\FeatureSelectionDetector.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\Scripts\FeatureUiMarker.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\Scripts\ForwardGeocodeUserInput.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\Scripts\HeroBuildingSelectionUserInput.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\Scripts\HighlightFeature.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\Scripts\ImmediatePositionWithLocationProvider.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\Scripts\LabelTextSetter.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\Scripts\LoadingPanelController.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\Scripts\LocationStatus.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\Scripts\MakiHelper.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\Scripts\ObjectInspectorModifier.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\Scripts\PoiLabelTextSetter.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\Scripts\PoiMarkerHelper.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\Scripts\PositionWithLocationProvider.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\Scripts\QuadTreeCameraMovement.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\Scripts\ReloadMap.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\Scripts\ReverseGeocodeUserInput.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\Scripts\RotateWithLocationProvider.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\Scripts\TrafficUvAnimator.cs" />
-     <Compile Include="Assets\Mapbox SDK\Mapbox\Examples\Scripts\UpdateMapWithLocationProvider.cs" />
+     <Compile Include="Assets\Mapbox SDK\Mapbox\Scripts\CameraBillboard.cs" />
+     <Compile Include="Assets\Mapbox SDK\Mapbox\Scripts\CameraMovement.cs" />
+     <Compile Include="Assets\Mapbox SDK\Mapbox\Scripts\ChangeShadowDistance.cs" />
+     <Compile Include="Assets\Mapbox SDK\Mapbox\Scripts\DragableDirectionWaypoint.cs" />
+     <Compile Include="Assets\Mapbox SDK\Mapbox\Scripts\FeatureSelectionDetector.cs" />
+     <Compile Include="Assets\Mapbox SDK\Mapbox\Scripts\FeatureUiMarker.cs" />
+     <Compile Include="Assets\Mapbox SDK\Mapbox\Scripts\ForwardGeocodeUserInput.cs" />
+     <Compile Include="Assets\Mapbox SDK\Mapbox\Scripts\HeroBuildingSelectionUserInput.cs" />
+     <Compile Include="Assets\Mapbox SDK\Mapbox\Scripts\HighlightFeature.cs" />
+     <Compile Include="Assets\Mapbox SDK\Mapbox\Scripts\ImmediatePositionWithLocationProvider.cs" />
+     <Compile Include="Assets\Mapbox SDK\Mapbox\Scripts\LabelTextSetter.cs" />
+     <Compile Include="Assets\Mapbox SDK\Mapbox\Scripts\LoadingPanelController.cs" />
+     <Compile Include="Assets\Mapbox SDK\Mapbox\Scripts\LocationStatus.cs" />
+     <Compile Include="Assets\Mapbox SDK\Mapbox\Scripts\MakiHelper.cs" />
+     <Compile Include="Assets\Mapbox SDK\Mapbox\Scripts\ObjectInspectorModifier.cs" />
+     <Compile Include="Assets\Mapbox SDK\Mapbox\Scripts\PoiLabelTextSetter.cs" />
+     <Compile Include="Assets\Mapbox SDK\Mapbox\Scripts\PoiMarkerHelper.cs" />
+     <Compile Include="Assets\Mapbox SDK\Mapbox\Scripts\PositionWithLocationProvider.cs" />
+     <Compile Include="Assets\Mapbox SDK\Mapbox\Scripts\QuadTreeCameraMovement.cs" />
+     <Compile Include="Assets\Mapbox SDK\Mapbox\Scripts\ReloadMap.cs" />
+     <Compile Include="Assets\Mapbox SDK\Mapbox\Scripts\ReverseGeocodeUserInput.cs" />
+     <Compile Include="Assets\Mapbox SDK\Mapbox\Scripts\RotateWithLocationProvider.cs" />
+     <Compile Include="Assets\Mapbox SDK\Mapbox\Scripts\TrafficUvAnimator.cs" />
+     <Compile Include="Assets\Mapbox SDK\Mapbox\Scripts\UpdateMapWithLocationProvider.cs" />
      <Compile Include="Assets\Mapbox SDK\Mapbox\Unity\Constants.cs" />
      <Compile Include="Assets\Mapbox SDK\Mapbox\Unity\DataContainers\CameraBoundsTileProviderOptions.cs" />
      <Compile Include="Assets\Mapbox SDK\Mapbox\Unity\DataContainers\ColliderOptions.cs" />
@@ -421,7 +391,6 @@
      <Compile Include="Assets\Mapbox SDK\Mapbox\Unity\Utilities\TelemetryConfigurationButton.cs" />
      <Compile Include="Assets\Mapbox SDK\Mapbox\Unity\Utilities\VectorEntity.cs" />
      <Compile Include="Assets\Mapbox SDK\Mapbox\Unity\Utilities\VectorExtensions.cs" />
-     <Compile Include="Assets\Models\Player\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\Deprecation\GeoJsonCollection.cs" />
      <Compile Include="Assets\Scripts\Deprecation\GeoJsonPosition.cs" />
      <Compile Include="Assets\Scripts\Deprecation\GeoJsonTree.cs" />
@@ -442,72 +411,44 @@
      <Compile Include="Assets\Scripts\UIManager.cs" />
      <Compile Include="Assets\display_get_tree_data.cs" />
      <None Include="Assets\Scripts\MongoDB\Plugins\MongoDB.Bson.xml" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
-     <None Include="Assets\Mapbox SDK\Mapbox\Examples\2_AstronautGame\AstronautGame\Astronaut\ProjectorLight.shader" />
+     <None Include="Assets\GUI\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+     <None Include="Assets\GUI\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Mapbox SDK\Mapbox\Unity\Location\ExampleGpsTraces\LocationProviderAndroidNative.txt" />
-     <None Include="Assets\Mapbox SDK\Mapbox\Examples\2_AstronautGame\AstronautGame\Building\CharacterBuildingShader.shader" />
      <None Include="Assets\Scripts\MongoDB\Plugins\MongoDB.Driver.Core.xml" />
      <None Include="Assets\Mapbox SDK\Mapbox\Shaders\MapboxStylesPerRenderer.shader" />
      <None Include="Assets\Mapbox SDK\Mapbox\Unity\Location\ExampleGpsTraces\LocationProviderUnity.txt" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
-     <None Include="Assets\GUI\PROCJAM2017-DevilsGarage\2D_v01.0.0\View-Top\sprites\sprites.txt" />
+     <None Include="Assets\GUI\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\Mapbox SDK\Mapbox\link.xml" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\GUI\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\Mapbox SDK\Mapbox\Shaders\MapboxStyles.shader" />
      <None Include="Assets\Scripts\Deprecation\JsonDotNet\link.xml" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
-     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
-     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
-     <None Include="Assets\Models\Trees\BrokenVector\FreeLowPolyPack\readme.txt" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\GUI\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+     <None Include="Assets\GUI\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+     <None Include="Assets\GUI\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <None Include="Assets\GUI\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\GUI\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\GUI\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\GUI\Trees\BrokenVector\FreeLowPolyPack\readme.txt" />
+     <None Include="Assets\GUI\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\Mapbox SDK\Mapbox\README.txt" />
      <None Include="Assets\Mapbox SDK\Mapbox\Core\Plugins\Android\UniAndroidPermission\AndroidManifest-uniRP.xml" />
-     <None Include="Assets\GUI\PROCJAM2017-DevilsGarage\ReadMe.txt" />
-     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\GUI\DevilsGarage\ReadMe.txt" />
+     <None Include="Assets\GUI\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\Mapbox SDK\Mapbox\Core\Plugins\link.xml" />
      <None Include="Assets\Mapbox SDK\Mapbox\Shaders\RasterWithTransparencyShader.shader" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\GUI\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\Mapbox SDK\Mapbox\Fonts\OpenSansLic.txt" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
-     <None Include="Assets\GUI\PROCJAM2017-DevilsGarage\2D_v01.0.0\View-Front\sprite-wall\sprites.txt" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets\GUI\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\GUI\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\Mapbox SDK\Mapbox\Unity\Location\ExampleGpsTraces\Helsinki.txt" />
-     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+     <None Include="Assets\GUI\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+     <None Include="Assets\GUI\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\Resources\Mapbox\MapboxConfiguration.txt" />
      <None Include="Assets\Mapbox SDK\Mapbox\Unity\Location\ExampleGpsTraces\LocationProviderAndroidNative-2.txt" />
      <None Include="Assets\Scripts\MongoDB\Plugins\MongoDB.Driver.xml" />
-     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
- <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
- </Reference>
- <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+     <None Include="Assets\GUI\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+ <Reference Include="UnityEngine">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -686,59 +627,62 @@
  <Reference Include="UnityEngine.XRModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
+ </Reference>
  <Reference Include="MapboxAccountsUnity">
- <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/Mapbox/MapboxAccounts/net35/MapboxAccountsUnity.dll</HintPath>
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/Mapbox/MapboxAccounts/net35/MapboxAccountsUnity.dll</HintPath>
  </Reference>
  <Reference Include="Mapbox.VectorTile.ExtensionMethods">
- <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/Mapbox/vector-tile-cs/net46/Mapbox.VectorTile.ExtensionMethods.dll</HintPath>
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/Mapbox/vector-tile-cs/net46/Mapbox.VectorTile.ExtensionMethods.dll</HintPath>
  </Reference>
  <Reference Include="Mapbox.VectorTile.Geometry">
- <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/Mapbox/vector-tile-cs/net46/Mapbox.VectorTile.Geometry.dll</HintPath>
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/Mapbox/vector-tile-cs/net46/Mapbox.VectorTile.Geometry.dll</HintPath>
  </Reference>
  <Reference Include="Mapbox.VectorTile.PbfReader">
- <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/Mapbox/vector-tile-cs/net46/Mapbox.VectorTile.PbfReader.dll</HintPath>
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/Mapbox/vector-tile-cs/net46/Mapbox.VectorTile.PbfReader.dll</HintPath>
  </Reference>
  <Reference Include="Mapbox.VectorTile.VectorTileReader">
- <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/Mapbox/vector-tile-cs/net46/Mapbox.VectorTile.VectorTileReader.dll</HintPath>
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/Mapbox/vector-tile-cs/net46/Mapbox.VectorTile.VectorTileReader.dll</HintPath>
  </Reference>
  <Reference Include="Mapbox.IO.Compression">
- <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/ThirdParty/Mapbox.IO.Compression/net35/Mapbox.IO.Compression.dll</HintPath>
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/ThirdParty/Mapbox.IO.Compression/net35/Mapbox.IO.Compression.dll</HintPath>
  </Reference>
  <Reference Include="Mapbox.Json">
- <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/ThirdParty/Mapbox.Json/Net35/Mapbox.Json.dll</HintPath>
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Mapbox SDK/Mapbox/Core/Plugins/ThirdParty/Mapbox.Json/Net35/Mapbox.Json.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Scripts/Deprecation/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/Deprecation/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="Crc32C.NET">
- <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/Crc32C.NET.dll</HintPath>
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/Crc32C.NET.dll</HintPath>
  </Reference>
  <Reference Include="DnsClient">
- <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/DnsClient.dll</HintPath>
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/DnsClient.dll</HintPath>
  </Reference>
  <Reference Include="MongoDB.Bson">
- <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/MongoDB.Bson.dll</HintPath>
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/MongoDB.Bson.dll</HintPath>
  </Reference>
  <Reference Include="MongoDB.Driver.Core">
- <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/MongoDB.Driver.Core.dll</HintPath>
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/MongoDB.Driver.Core.dll</HintPath>
  </Reference>
  <Reference Include="MongoDB.Driver">
- <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/MongoDB.Driver.dll</HintPath>
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/MongoDB.Driver.dll</HintPath>
  </Reference>
  <Reference Include="MongoDB.Libmongocrypt">
- <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/MongoDB.Libmongocrypt.dll</HintPath>
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/MongoDB.Libmongocrypt.dll</HintPath>
  </Reference>
  <Reference Include="SharpCompress">
- <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/SharpCompress.dll</HintPath>
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/SharpCompress.dll</HintPath>
  </Reference>
  <Reference Include="Snappy.NET">
- <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/Snappy.NET.dll</HintPath>
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/Snappy.NET.dll</HintPath>
  </Reference>
  <Reference Include="System.Buffers">
- <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/System.Buffers.dll</HintPath>
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/System.Buffers.dll</HintPath>
  </Reference>
  <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
- <HintPath>C:/Users/Logan/Documents/GitHub/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+ <HintPath>D:/Coding/git/Trees/unity_app/Trees/Assets/Scripts/MongoDB/Plugins/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -1101,8 +1045,46 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
  </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Unity.Timeline.Editor.csproj">
+      <Project>{423be621-70bb-4063-b10f-33b1ebb426e0}</Project>
+      <Name>Unity.Timeline.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VSCode.Editor.csproj">
+      <Project>{bfa19b26-4967-de9c-ef72-0bbd67e49cad}</Project>
+      <Name>Unity.VSCode.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
+      <Project>{927e8957-6ac4-481f-1a8d-7cae50c5572b}</Project>
+      <Name>Unity.TextMeshPro.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{7a76b8a6-9222-d078-923e-0b2d4be254d7}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Timeline.csproj">
+      <Project>{0114c898-541b-a36a-c2d8-52c235f77288}</Project>
+      <Name>Unity.Timeline</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.CollabProxy.Editor.csproj">
+      <Project>{c428c122-c460-970e-cfe7-db682178e692}</Project>
+      <Name>Unity.CollabProxy.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Rider.Editor.csproj">
+      <Project>{a814c350-c5b1-f87f-4309-1e6563a77c2f}</Project>
+      <Name>Unity.Rider.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.csproj">
+      <Project>{a036554b-0d08-6b7f-8c48-179d3c6af8d2}</Project>
+      <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{0dadc8c3-db8b-3dea-0f0b-95e04d161cbf}</Project>
+      <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
