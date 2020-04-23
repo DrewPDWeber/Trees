@@ -44,7 +44,7 @@ Assets:file_folder:
 ## Credits 
 - [Mapbox](https://www.mongodb.com/cloud/atlas/ "Mapbox") for location data and map SDK
 - [DevilsGarage](https://www.devilsgarage.com "DevilsGarage") for Low-Poly-Pixel-Styled-RPG Game Asset Pack which was used for its trees and player assets.
-- [Blue Cartoon GUI Skin](https://assetstore.unity.com/packages/2d/gui/blue-cartoon-gui-skin-19535m "Blue Cartoon GUI Skin") For some GUI elements such as buttons.
+- [Blue Cartoon GUI Skin](https://assetstore.unity.com/packages/2d/gui/blue-cartoon-gui-skin-19535 "Blue Cartoon GUI Skin") For some GUI elements such as buttons.
 - [MongoDB Cloud Atlas](https://www.mongodb.com/cloud/atlas/ "MongoDB Cloud Atlas") for there free database hosting aswell as there C# wrapper files.
 - [One Tree Planted](https://onetreeplanted.org/ "MongoDB Cloud Atlas") for there logo for use for donations.
 
